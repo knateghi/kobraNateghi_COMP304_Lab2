@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CardPaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="45dp">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/CashRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash" />
+
+            <RadioButton
+                android:id="@+id/CreditRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit" />
+
+            <RadioButton
+                android:id="@+id/debitRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debit" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="238dp">
+
+        <TextView
+            android:id="@+id/chnTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Holder Name:" />
+
+        <EditText
+            android:id="@+id/CardHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter here..."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cnTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Nunber:" />
+
+        <EditText
+            android:id="@+id/CardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter here..."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/kTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key:" />
+
+        <EditText
+            android:id="@+id/privateKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="135dp">
+
+        <TextView
+            android:id="@+id/oaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Amount:" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed With Payment"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="662dp" />
+    </LinearLayout>
+
+</LinearLayout>
